@@ -2,8 +2,10 @@
 # tasks file for test-role
 
 - name: test role test task
-  shell: echo "hi there"
+  shell: |
+           pwd
   register: op
+  
 - name: debug
   debug:
     var: op
