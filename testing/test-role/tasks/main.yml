@@ -3,7 +3,7 @@
 
 - name: test role test task
   shell: |
-           pwd
+           echo "hello"
   register: op
   
 - name: debug
