@@ -1,4 +1,4 @@
 ---
 # meta file 
 
-role_dependencies = role.metadata.get('dependencies') or []
+#role_dependencies = role.metadata.get('dependencies') or []
