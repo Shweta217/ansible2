@@ -1,2 +1,4 @@
 ---
 # meta file 
+
+role_dependencies = role.metadata.get('dependencies') or []
