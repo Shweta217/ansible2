@@ -7,8 +7,6 @@
     region: us-east-1
     #aws_access_key: "{{aws_access_key}}"
     #aws_secret_key: "{{aws_secret_key}}"
-    aws_access_key: AKIA3VQI5UPMIXHQHUYG
-    aws_secret_key: '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'
   register: result
 - name: debug
   debug:
@@ -23,8 +21,6 @@
     region: us-east-1
     #aws_access_key: "{{aws_access_key}}"
     #aws_secret_key: "{{aws_secret_key}}"
-    aws_access_key: AKIA3VQI5UPMIXHQHUYG
-    aws_secret_key: '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'
   register: download_op
 - name: debugging
   debug:
