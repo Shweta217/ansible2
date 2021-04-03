@@ -1,7 +1,12 @@
-- name: play
+- name: download war file from s3 to controller
   hosts: localhost
   gather_facts: no
   roles:
     #- roles/test-role
-    - roles/s3-war-download 
+    - roles/s3-war-download
+
+- name: send war file to tomcat server from controller
+  hosts: tomcat_server
+  gather_facts: no
+  roles:
     - roles/deploy-to-tomcat-webapp
