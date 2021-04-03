@@ -1,11 +1,4 @@
-- name: halt period for 2 minutes
-  hosts: localhost
-  gather_facts: no
-  tasks:
-    - name: lets wait for artifacts to be publiched on s3 by maven 
-      pause:
-        minutes: 2
-        
+    
 - name: download war file from s3 to controller
   hosts: localhost
   gather_facts: no
