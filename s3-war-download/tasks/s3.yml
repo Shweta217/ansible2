@@ -2,7 +2,7 @@
 
 - name: debug build no env.
   debug:
-    var: build_no
+    msg: "${{build.number}}"
 
 - name: s3 download
   amazon.aws.aws_s3:
