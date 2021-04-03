@@ -1,5 +1,17 @@
 ---
 
+- name: s3 bucket objects list
+  amazon.aws.aws_s3:
+    bucket: tc-maven
+    mode: list
+    region: us-east-1
+    aws_access_key: "{{aws_access_key}}"
+    aws_secret_key: "{{aws_secret_key}}"
+  register: result
+- name: debug
+  debug:
+    var: result.s3_keys[3]
+
 - name: s3 download
   amazon.aws.aws_s3:
     bucket: tc-maven
@@ -7,8 +19,8 @@
     dest: /tmp/second.war
     mode: get
     region: us-east-1
-    aws_access_key: AKIA3VQI5UPMIXHQHUYG
-    aws_secret_key: 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
+    aws_access_key: "{{aws_access_key}}"
+    aws_secret_key: "{{aws_secret_key}}"
   register: result
 - name: debugging
   debug:
