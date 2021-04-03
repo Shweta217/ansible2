@@ -1,6 +1,6 @@
 ansible_user: 'ec2-user'
-ansible_ssh_password: 'techna@217'
-ansible_password: 'techna@217'
+ansible_ssh_password: ''
+ansible_password: ''
 ansible_connection: ssh
 ansible_port: 22
 ansible_host_key_checking: false
