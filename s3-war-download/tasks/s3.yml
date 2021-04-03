@@ -1,9 +1,5 @@
 ---
 
-- name: debug build no env.
-  debug:
-    msg: "${{build.number}}"
-
 - name: s3 download
   amazon.aws.aws_s3:
     bucket: tc-maven
