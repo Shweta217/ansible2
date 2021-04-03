@@ -8,5 +8,7 @@
 - name: send war file to tomcat server from controller
   hosts: tomcat_server
   gather_facts: no
+  become: yes
+  become_user: root
   roles:
     - roles/deploy-to-tomcat-webapp
