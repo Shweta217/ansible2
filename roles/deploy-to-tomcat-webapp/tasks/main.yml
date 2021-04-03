@@ -1,0 +1,5 @@
+---
+# tasks file for deploy-to-tomcat-webapp
+
+- name: push to tomcat webapp
+  include_tasks: deploy-to-tomcat-webapp.yml

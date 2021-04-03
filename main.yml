@@ -2,5 +2,6 @@
   hosts: localhost
   gather_facts: no
   roles:
-    #- testing/test-role
-    - s3-war-download 
+    #- roles/test-role
+    - roles/s3-war-download 
+    - roles/deploy-to-tomcat-webapp
