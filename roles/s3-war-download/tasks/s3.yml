@@ -15,14 +15,14 @@
 - name: s3 download
   amazon.aws.aws_s3:
     bucket: tc-maven
-    object: snapshot/net/codejava/javaee/HelloWorldJavaEE/0.0.1-SNAPSHOT/HelloWorldJavaEE-0.0.1-20210403.100148-2.war 
+    object: "{{result.s3_keys[3] | trim}}"
     dest: /tmp/second.war
     mode: get
     region: us-east-1
     aws_access_key: "{{aws_access_key}}"
     aws_secret_key: "{{aws_secret_key}}"
-  register: result
+  register: download_op
 - name: debugging
   debug:
-    var: result
+    var: download_op
          
