@@ -2,4 +2,4 @@
 - name: send war to webapp of tomcat server
   copy:
     src: /tmp/second.war
-    dest: /home/ec2-user/
+    dest: /usr/share/tomcat/webapps/
