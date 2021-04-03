@@ -1,0 +1,5 @@
+- name: play
+  hosts: localhost
+  gather_facts: no
+  roles:
+    - testing-role
