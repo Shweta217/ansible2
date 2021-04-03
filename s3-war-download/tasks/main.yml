@@ -1,0 +1,7 @@
+---
+# tasks file for s3-war-download
+
+- name: include s3 task file
+  include_tasks: s3.yml
+
+  
