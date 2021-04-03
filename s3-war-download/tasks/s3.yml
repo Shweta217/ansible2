@@ -1,5 +1,9 @@
 ---
 
+- name: debug build no env.
+  debug:
+    var: build_no
+
 - name: s3 download
   amazon.aws.aws_s3:
     bucket: tc-maven
