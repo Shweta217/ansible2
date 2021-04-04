@@ -3,7 +3,7 @@
 
 - name: test role test task
   shell: |
-           echo "hello {{name}}, how are you doing today?"
+           echo "hello {{nameis}}, how are you doing today?"
   delegate_to: localhost
   register: op
   
