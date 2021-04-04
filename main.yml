@@ -3,13 +3,13 @@
   hosts: localhost
   gather_facts: no
   roles:
-    #- roles/test-role
-    - roles/s3-war-download
+    - roles/test-role
+    #- roles/s3-war-download
 
-- name: send war file to tomcat server from controller
-  hosts: tomcat_server
-  gather_facts: no
-  become: yes
-  become_user: root
-  roles:
-    - roles/deploy-to-tomcat-webapp
+#- name: send war file to tomcat server from controller
+  #hosts: tomcat_server
+  #gather_facts: no
+  #become: yes
+  #become_user: root
+  #roles:
+    #- roles/deploy-to-tomcat-webapp
