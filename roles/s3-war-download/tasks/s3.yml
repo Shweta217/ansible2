@@ -5,8 +5,8 @@
     bucket: tc-maven
     mode: list
     region: us-east-1
-    #aws_access_key: "{{aws_access_key}}"
-    #aws_secret_key: "{{aws_secret_key}}"
+    aws_access_key: "{{aws_access_key}}"
+    aws_secret_key: "{{aws_secret_key}}"
   register: result
 - name: debug
   debug:
@@ -19,8 +19,8 @@
     dest: /tmp/second.war
     mode: get
     region: us-east-1
-    #aws_access_key: "{{aws_access_key}}"
-    #aws_secret_key: "{{aws_secret_key}}"
+    aws_access_key: "{{aws_access_key}}"
+    aws_secret_key: "{{aws_secret_key}}"
   register: download_op
 - name: debugging
   debug:
